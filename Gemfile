@@ -5,3 +5,4 @@ ruby File.read('./.ruby-version')
 
 gem 'sinatra'
 gem 'puma'
+gem 'shotgun'
