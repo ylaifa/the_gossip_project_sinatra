@@ -1,3 +1,3 @@
-# the_gossip_project_sinatra is an application using the [gem 'sinatra'] (https://github.com/sinatra/sinatra)
+**the_gossip_project_sinatra** is an application using the [gem 'sinatra'](https://github.com/sinatra/sinatra).
 
-This application allows to display and post gossips
+This application allows to display and post gossips.
