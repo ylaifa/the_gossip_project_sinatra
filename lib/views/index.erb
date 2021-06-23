@@ -7,5 +7,12 @@
         <h2>Hey hey welcome :-)</h2>
         <h3>If you have a new gossip, add it</h3>
         <a href="/gossips/new/">Add new gossip</a>
+        <h4>Gossip list :</h4>
+        <% gossips.each do |gossip| %>
+            <p>
+            <%= gossip.author %><br/>
+            <%= gossip.content %>
+            </p>
+        <% end %>
     </body>
 </html>
