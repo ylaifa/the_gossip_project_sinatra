@@ -8,10 +8,11 @@
         <h3>If you have a new gossip, add it</h3>
         <a href="/gossips/new/">Add new gossip</a>
         <h4>Gossip list :</h4>
-        <% gossips.each do |gossip| %>
+        <% gossips.each_with_index do |gossip, index| %>
             <p>
             <%= gossip.author %><br/>
-            <%= gossip.content %>
+            <%= gossip.content %><br/>
+            <a href="/gossips/<%= index + 1 %>/">Show gossip</a>
             </p>
         <% end %>
     </body>
