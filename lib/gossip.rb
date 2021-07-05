@@ -2,7 +2,7 @@ require 'csv'
 
 class Gossip 
   attr_accessor :author, :content
-  
+
   def initialize(author, content)
     @author = author
     @content = content
@@ -21,5 +21,10 @@ class Gossip
     end
     all_gossips
   end
-end
 
+  def self.find(ressource)
+    i = ressource.to_i - 1
+    csv = CSV.read("./db/gossip.csv")
+    csv[i]
+  end
+end
